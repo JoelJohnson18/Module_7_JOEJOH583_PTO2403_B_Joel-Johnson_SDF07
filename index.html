@@ -282,15 +282,24 @@
 
 		</div>
 		<!-- End of gallery -->
+		<div class="loading-circle"></div>
 
-		<div class="loader"></div>
+		<script>
+			// JavaScript for the loading circle
+			window.addEventListener('scroll', function() {
+				const loadingCircle = document.querySelector('.loading-circle');
+				if (window.scrollY > 100) {
+					loadingCircle.style.display = 'block';
+				} else {
+					loadingCircle.style.display = 'none';
+				}
+			});
+		</script>
 
 	</div>
 	<!-- End of container -->
 
 </main>
-
-    
 </body>
 </html>
 
